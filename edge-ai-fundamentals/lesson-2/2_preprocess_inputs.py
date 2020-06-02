@@ -1,3 +1,4 @@
+# My Solution:
 
 import cv2
 import numpy as np
@@ -13,7 +14,6 @@ def preprocessing(input_image, height, width):
     image = cv2.resize(input_image, (width, height))
     image = image.transpose((2,0,1))
     image = image.reshape(1, 3, height, width)
-
     return image
 
 
@@ -25,7 +25,6 @@ def pose_estimation(input_image):
     to resize the image.
     '''
     preprocessed_pose = preprocessing(input_image, 256, 456)
-
     return preprocessed_pose
 
 
@@ -37,7 +36,6 @@ def text_detection(input_image):
     to resize the image.
     '''
     preprocessed_text = preprocessing(input_image, 768, 1280)
-
     return preprocessed_text
 
 
@@ -49,5 +47,4 @@ def car_meta(input_image):
     to resize the image.
     '''
     preprocessed_car = preprocessing(input_image, 72, 72)
-
     return preprocessed_car
