@@ -1,4 +1,4 @@
-#From Udacity Staff
+### Solution from Udacity Staff
 # Preprocessing Inputs
 
 ### Pose Estimation
