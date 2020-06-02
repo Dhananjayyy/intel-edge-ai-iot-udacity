@@ -1,5 +1,5 @@
-
-# Preprocessing Inputs - Solution
+#From Udacity Staff
+# Preprocessing Inputs
 
 ### Pose Estimation
 
